@@ -1,4 +1,5 @@
-﻿@{
+﻿@model NumModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -7,8 +8,36 @@
     
     <input type="button"
            value="Generate next num"
-           onclick="location.href='@Url.Action("Privacy", "Home")'" />
+           onclick="location.href='@Url.Action("Index", "Home")'" />
     
+    <div id="number"></div>
+    
+    <script>
+        number = document.getElementById('number');
+        number.innerHTML = "<h3>@Model.Number</h3>";
+    </script>
 
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <input type="button"
+           value="Show pronunciation"
+           onclick="press()" />
+
+    <div id="pronunciation"></div>
+    
+    <script>
+        isVisible = false;
+
+        press = () => {
+            if (isVisible) {
+                number = document.getElementById('pronunciation');
+                number.innerHTML = "<h3></h3>";
+                isVisible = false;
+            } else {
+                number = document.getElementById('pronunciation');
+                number.innerHTML = "<h3>@Model.Pronunciation</h3>";
+                isVisible = true;
+            }
+        }
+    </script>
+    
+    
 </div>
