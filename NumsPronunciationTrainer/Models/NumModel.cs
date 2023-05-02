@@ -1,14 +1,25 @@
-﻿namespace NumsPronunciationTrainer.Models;
+﻿using NumsPronunciationTrainer.Algorythms;
+
+namespace NumsPronunciationTrainer.Models;
 
 public class NumModel
 {
-    public int Number { get; set; }
-
+    public int Number { get; }
     public string? Pronunciation
     {
         get
         {
-            return "new pronunciation";
+            var solver = new PronunciationSolver();
+            var pron = solver.GetPronunciation(Number);
+            
+            return pron;
         }
+    }
+
+   
+
+    public NumModel(int number)
+    {
+        Number = number;
     }
 }

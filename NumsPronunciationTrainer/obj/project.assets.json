@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Artemii\\source\\repos\\MoviesAPI\\NumsPronunciationTrainer\\NumsPronunciationTrainer\\NumsPronunciationTrainer.csproj",
+      "projectUniqueName": "C:\\Users\\Artemii\\source\\repos\\NumsPronunciationTrainer\\NumsPronunciationTrainer\\NumsPronunciationTrainer.csproj",
       "projectName": "NumsPronunciationTrainer",
-      "projectPath": "C:\\Users\\Artemii\\source\\repos\\MoviesAPI\\NumsPronunciationTrainer\\NumsPronunciationTrainer\\NumsPronunciationTrainer.csproj",
+      "projectPath": "C:\\Users\\Artemii\\source\\repos\\NumsPronunciationTrainer\\NumsPronunciationTrainer\\NumsPronunciationTrainer.csproj",
       "packagesPath": "C:\\Users\\Artemii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Artemii\\source\\repos\\MoviesAPI\\NumsPronunciationTrainer\\NumsPronunciationTrainer\\obj\\",
+      "outputPath": "C:\\Users\\Artemii\\source\\repos\\NumsPronunciationTrainer\\NumsPronunciationTrainer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Artemii\\AppData\\Roaming\\NuGet\\NuGet.Config",
